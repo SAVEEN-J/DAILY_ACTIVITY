@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codekata Day 4 : 10th April 2023 </title>
+</head>
+<body>
+    <h1>Codekata Day 4 : 10th April 2023 </h1>
+
+<h3>MATH <a href="https://www.w3schools.com/js/js_math.asp" target="_blank"> REFERENCE </a></h3>
+<h2>
+    Math.E        returns Euler's number<br>
+Math.PI      returns PI<br>
+Math.SQRT2   returns the square root of 2<br>
+Math.SQRT1_2  // returns the square root of 1/2<br>
+Math.LN2      // returns the natural logarithm of 2<br>
+Math.LN10     // returns the natural logarithm of 10<br>
+Math.LOG2E    // returns base 2 logarithm of E<br>
+Math.LOG10E   // returns base 10 logarithm of E<br>
+Math.round(x)	Returns x rounded to its nearest integer<br>
+Math.ceil(x)	Returns x rounded up to its nearest integer<br>
+Math.floor(x)	Returns x rounded down to its nearest integer<br>
+Math.trunc(x)	Returns the integer part of x (new in ES6)<br>
+</h2>
+
+<script>
+// *
+// **
+// ***
+// ****
+// *****
+
+// let temp="";
+// for (let i = 0; i < 5; i++) {
+// temp = temp +"*";
+
+//     console.log(temp);
+    
+// }
+
+// let temp ="*";
+//  for (let i = 1; i < 5; i++) {
+//     console.log(temp.repeat(i ));
+    
+//  }
+
+
+
+
+
+//math
+// Math.round(0.2) => 0
+    
+// Math.round(0.49) => 0
+
+// Math.round(0.5) => 1
+
+// Math.round(0.9) => 1
+
+
+// Math.ceil(0.2) => 1
+
+// Math.ceil(0.49) => 1
+
+// Math.ceil(0.5) => 1
+
+// Math.ceil(0.9) => 1
+
+
+
+//123 =6
+
+var splitValues=[1,2,3]
+// console.log(splitValues);
+let temp="";
+for (let i = 0; i < splitValues.length; i++) {
+
+    temp=Number( temp+splitValues[i])
+//     0 + Number("1") => 0 + 1 => 1
+
+// 1 + Number("2") => 1 + 2 => 3
+
+// 3 + Number("3") => 3 + 3 => 6
+
+    
+}
+// console.log(temp);
+ // modules find the reminder
+///123
+
+// let input=123;
+
+// let sum =0;
+
+// while (input > 0) {
+
+//     sum  = sum +(input % 10)
+//   input = Math.floor(input / 10)
+
+   
+    
+// }
+//  console.log(sum);
+
+// console.log(a%10);
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<!-- ----------------------------------------------------------------------------------------------------
+Day 4
+----------------------------------------------------------------------------------------------------
+
+Math Method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+Math.round(0.2) => 0
+    
+Math.round(0.49) => 0
+
+Math.round(0.5) => 1
+
+Math.round(0.9) => 1
+
+
+Math.ceil(0.2) => 1
+
+Math.ceil(0.49) => 1
+
+Math.ceil(0.5) => 1
+
+Math.ceil(0.9) => 1
+
+let input = "123"
+
+var splitValues = input.split("");
+    
+let sum = 0;
+
+for (let i = 0; i < splitValues.length; i++) {
+
+  sum = sum + Number(splitValues[i]);
+
+}
+
+
+0 + "1" => "01"
+
+"01" + "2" => "012"
+
+"012" + "3" => "0123"
+
+
+0 + Number("1") => 0 + 1 => 1
+
+1 + Number("2") => 1 + 2 => 3
+
+3 + Number("3") => 3 + 3 => 6
+
+console.log(sum)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Using While Loop
+
+let input = 123;
+   
+let sum = 0;
+
+while (input > 0) {
+
+  sum = sum + (input % 10)
+
+  input = Math.floor(input / 10)
+
+}
+
+console.log(sum);
+
+https://pythontutor.com/visualize.html#mode=display
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+Join Example:
+
+["a", "b", "c"].join() => "a,b,c"
+    
+["a", "b", "c"].join("") => "abc"
+
+["a", "b", "c"].join(" ") => "a b c"
+
+["a", "b", "c"].join(",") => "a,b,c"
+
+["a", "b", "c"].join("A") => "aAbAc"
+
+
+Example: ["good", "morning"] => "good morning"
+
+let input = "good";
+    
+console.log(input.split("")) => ["g", "o", "o", "d"]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Input / Output 
+
+Program #9:
+
+const readline = require('readline');
+
+const inp = readline.createInterface({  
+	input: process.stdin
+});
+
+let userInput = "";
+
+inp.on("line", (data) => { 
+	// Input Data
+	
+	userInput = data;
+    
+});
+
+inp.on("close", () => {
+	// Output Process
+	
+	for(let i = 0; i < userInput.length; i++) {
+	    
+	    console.log(userInput[i]);
+	    
+	}
+    
+});
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Absolute
+
+Program #1:
+
+Sample Input :
+2
+Sample Output :
+2 4 6
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+let input;
+
+inp.on("line", (data) => {
+    
+    // Input data process here
+    
+    input = data;
+    
+});
+
+inp.on("close", () => {
+
+    // Output data process here
+    
+    let temp = [];
+    
+    for (let i = 1; i <= 3; i++) {
+        
+        temp.push(i * input);
+        
+    }
+    
+    
+    console.log(temp.join(" "))
+    
+   
+});
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+Recording Link:
+
+Day 1: https://shorturl.at/wEST4
+
+Day 2: https://shorturl.at/mRVY2
+
+Day 3: https://shorturl.at/aopOP
+
+Day 4: https://shorturl.at/fvzN1
+
+https://www.linkedin.com/in/imakbarbasha/ --> -->
